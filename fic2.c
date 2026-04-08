@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "prod.h"
 
 #define NB_LIGNES_MAX_DU_POEME 200
 #define TAILLEMAX_LIGNE 200 //
@@ -31,7 +32,7 @@ FILE *fic=NULL;
 		do
 		{
 
-		//fgets(ligne,TAILLEMAX_LIGNE,fic);//pas de fscanf ici sinon vous ne lirez jamais toute la ligne (mais simplement son premier mot
+		fgets(ligne,TAILLEMAX_LIGNE,fic);//pas de fscanf ici sinon vous ne lirez jamais toute la ligne (mais simplement son premier mot
 		//ou bien pour lire commandeXXXX.txt
         //int ref;
         //int qtt;
